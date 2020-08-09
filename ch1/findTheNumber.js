@@ -1,5 +1,6 @@
 class findTheNumber {
-  constructor(upperBound) {
+  constructor(upperBound, name) {
+    this.name = name;
     this.lowerBound = 0;
     this.upperBound = upperBound;
     this.secretNumber = (() => Math.round(Math.random() * upperBound))();
