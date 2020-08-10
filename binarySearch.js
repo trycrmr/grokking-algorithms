@@ -2,7 +2,7 @@ const guess = (thisFtn) => {
   return new Promise((resolve, reject) => {
     try {
       let low = 0;
-      let high = 100;
+      let high = thisFtn.upperBound;
       let mid = Math.round((low + high) / 2);
       while (low <= high) {
         if (thisFtn.checkSecretNumber(mid)) {
